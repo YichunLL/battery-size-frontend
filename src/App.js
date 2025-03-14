@@ -18,11 +18,11 @@ export default function BatterySizePredictor() {
   const [error, setError] = useState(null);
 
   const inputLabels = {
-    Length_pack: "Length (mm)",
-    Width_pack: "Width (mm)",
-    Height_pack: "Height (mm)",
-    Energy: "Energy (kWh)",
-    Total_Voltage: "Total Voltage (V)"
+    Length_pack: "Pack Length (mm)",
+    Width_pack: "Pack Width (mm)",
+    Height_pack: "Pack Height (mm)",
+    Energy: "Pack Energy (kWh)",
+    Total_Voltage: "Pack Voltage (V)"
   };
 
   const formatNumber = (num) => num ? num.toLocaleString("en-US", { maximumFractionDigits: 2, notation: "standard" }) : "-";
